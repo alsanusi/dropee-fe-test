@@ -129,7 +129,7 @@
                         </div>
                         <ul id="Menu">
                             <li class="dropdown hidden-xs hidden-sm ">
-                                <a href="#" onclick="openNav()" data-toggle="dropdown">
+                                <a href="#" onclick="openNavigation()" data-toggle="dropdown">
                                     &#9776; Menu
                                 </a>
                             </li>
@@ -213,19 +213,28 @@
                             <p><a href="#">Dropee x Lelong <img src="images/lelong.png" alt="Lelong" /></a></p>
                         </div>
                     </div>
-                    <!--  -->
-                    <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard </a>
-                        <a href="#sales" aria-controls="sales" role="tab" data-toggle="tab">Sales</a>
-                        <a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">Orders</a>
-                        <a href="#customers" aria-controls="customers" role="tab" data-toggle="tab">Customers</a>
-                        <a href="#products" aria-controls="products" role="tab" data-toggle="tab">Products</a>
-                        <a href="#promotion" aria-controls="promotion" role="tab" data-toggle="tab">Promotion</a>
-                        <a href="#store" aria-controls="store" role="tab" data-toggle="tab">Store
+                    <!-- Sidebar Navigation -->
+                    <div id="sidebar-nav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a>
+                        <a href="#dashboard" aria-controls="dashboard" data-toggle="tab" style="padding: 0px;"><img
+                                src="images/dropee-logo.png" class="navbar-logo" /></a>
+                        <a href="#dashboard" aria-controls="dashboard" onclick="closeNavigation()"
+                            data-toggle="tab">Dashboard
+                        </a>
+                        <a href="#sales" aria-controls="sales" onclick="closeNavigation()" data-toggle="tab">Sales</a>
+                        <a href="#orders" aria-controls="orders" onclick="closeNavigation()"
+                            data-toggle="tab">Orders</a>
+                        <a href="#customers" aria-controls="customers" onclick="closeNavigation()"
+                            data-toggle="tab">Customers</a>
+                        <a href="#products" aria-controls="products" onclick="closeNavigation()"
+                            data-toggle="tab">Products</a>
+                        <a href="#promotion" aria-controls="promotion" onclick="closeNavigation()"
+                            data-toggle="tab">Promotion</a>
+                        <a href="#store" aria-controls="store" onclick="closeNavigation()" data-toggle="tab">Store
                             Settings</a>
                     </div>
-                </div><!-- /.container -->
+                </div>
+                <!-- /.container -->
             </nav>
         </header>
         <section id="admin-panel">
@@ -573,14 +582,14 @@
 
         });
 
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+        // Sidebar Navigation Function
+        function openNavigation() {
+            document.getElementById("sidebar-nav").style.width = "230px";
         }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+        function closeNavigation() {
+            document.getElementById("sidebar-nav").style.width = "0";
         }
-
         //]]>
     </script>
 
