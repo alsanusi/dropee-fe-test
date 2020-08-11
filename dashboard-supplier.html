@@ -216,22 +216,27 @@
                     <!-- Sidebar Navigation -->
                     <div id="sidebar-nav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a>
-                        <a href="#dashboard" aria-controls="dashboard" data-toggle="tab" style="padding: 0px;"><img
+                        <a href="#dashboard" onclick="closeNavigation()" data-toggle="tab" style="padding: 0px;"><img
                                 src="images/dropee-logo.png" class="navbar-logo" /></a>
-                        <a href="#dashboard" aria-controls="dashboard" onclick="closeNavigation()"
-                            data-toggle="tab">Dashboard
-                        </a>
-                        <a href="#sales" aria-controls="sales" onclick="closeNavigation()" data-toggle="tab">Sales</a>
-                        <a href="#orders" aria-controls="orders" onclick="closeNavigation()"
-                            data-toggle="tab">Orders</a>
-                        <a href="#customers" aria-controls="customers" onclick="closeNavigation()"
-                            data-toggle="tab">Customers</a>
-                        <a href="#products" aria-controls="products" onclick="closeNavigation()"
-                            data-toggle="tab">Products</a>
-                        <a href="#promotion" aria-controls="promotion" onclick="closeNavigation()"
-                            data-toggle="tab">Promotion</a>
-                        <a href="#store" aria-controls="store" onclick="closeNavigation()" data-toggle="tab">Store
-                            Settings</a>
+                        <div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active"><a href="#dashboard" onclick="closeNavigation()" role="tab"
+                                        data-toggle="tab">Dashboard </a></li>
+                                <li><a href="#sales" onclick="closeNavigation()" role="tab" data-toggle="tab">Sales</a>
+                                </li>
+                                <li><a href="#orders" onclick="closeNavigation()" role="tab"
+                                        data-toggle="tab">Orders</a>
+                                </li>
+                                <li><a href="#customers" onclick="closeNavigation()" role="tab"
+                                        data-toggle="tab">Customers</a></li>
+                                <li><a href="#products" onclick="closeNavigation()" role="tab"
+                                        data-toggle="tab">Products</a></li>
+                                <li><a href="#promotion" onclick="closeNavigation()" role="tab"
+                                        data-toggle="tab">Promotion</a></li>
+                                <li><a href="#store" onclick="closeNavigation()" role="tab" data-toggle="tab">Store
+                                        Settings</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <!-- /.container -->
