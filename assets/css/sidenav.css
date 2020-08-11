@@ -38,23 +38,23 @@
     padding-bottom: 10px;
 }
 
-.nav-tabs {
+.sidenav .nav-tabs {
     border-bottom: none;
 }
 
-.nav-tabs>li {
+.sidenav .nav-tabs>li {
     float: none;
     margin-bottom: 10px;
 }
 
-.nav-tabs>li>a {
+.sidenav .nav-tabs>li>a {
     margin-right: 0px;
 }
 
-.nav-tabs>li.active>a {
-    color: #fff !important;
-    background-color: #fa6f34 !important;
-    border: 1px solid #fa6f34 !important;
+.sidenav .nav-tabs>li.active>a {
+    color: #fff;
+    background-color: #fa6f34;
+    border: 1px solid #fa6f34;
 }
 
 @media screen and (max-height: 450px) {
